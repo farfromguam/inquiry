@@ -9,29 +9,38 @@ class Context < ActiveRecord::Base
   # the circumstances that form the setting for an event, statement, or idea, and in terms of which it can be fully understood and assessed.
 
   belongs_to :contextable, polymorphic: true
+  has_many :tags
+
+  tag is a context, context is many tags
+
+
+  word cloud
+    tags and their percent
+
+  mesh
+    sorted relationships
+    between items
+    and distances
+    in a nd universe
+
+  4D object mesh
+    above with data as reported
+    by users Knolling the items around them  https://en.wikipedia.org/wiki/Knolling
+    taking photo
+    identifing objects and the distances between them
+    making a 3D mesh
+
+  3d order mesh
+    above with data as reported
+    by users ordering items in a list
+    identifing appromimate distances
+    making a 3d mesh
+
+  emotion mesh
+    sorted relationship
+    between emotion fingerprints
+    in ND space
+
 
 
 end
-
-
-
-tags.attrs
-  description: serious
-  context:
-  percent: 0-100%
-
-[serious|100%] question:
-  how did you deal with your moms death
-
-[serious|80%] question:
-  how did you deal with your crazy aunts death
-
-[serious|20%] question:
-  how did you deal with your car dying.
-
-
-tag_finger_print: combination of the tags and percent
-EX [work:80, serious:100]
-these questions have a similar fingerprint
-- what do you do?
-- how much modey do you make?
