@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170523001430) do
 
   create_table "questions", force: :cascade do |t|
     t.integer  "user_id"
+    t.string   "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -11,10 +11,19 @@ namespace :db do
 
   desc "Torches and rebuilds the database for local development"
   task pheonix: :environment do
+    puts("invoke - db:start")
     Rake::Task['db:start'].invoke
+
+    puts("invoke - db:drop")
     Rake::Task['db:drop'].invoke
+
+    puts("invoke - db:create")
     Rake::Task['db:create'].invoke
+
+    puts("invoke - db:migrate")
     Rake::Task['db:migrate'].invoke
+
+    puts("invoke - db:seed")
     Rake::Task['db:seed'].invoke
     # The Life of King Henry the Eighth
     system('say "
