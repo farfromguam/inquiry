@@ -14,3 +14,20 @@
     username: Faker::Internet.user_name
   )
 end
+
+
+5.times do |x|
+  Question.create(
+    body: "what is #{Faker::Number.number(2)} #{['+','-','*','/'].sample} #{Faker::Number.number(2)}"
+  )
+end
+
+
+5.times do |x|
+  question = Question.all.sample
+
+  Response.create(
+    question: question,
+    body: "I Don't Know"
+  )
+end

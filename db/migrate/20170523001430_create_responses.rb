@@ -3,6 +3,7 @@ class CreateResponses < ActiveRecord::Migration
     create_table :responses do |t|
       t.references :question, index: true
       t.references :user, index: true
+      t.string :body
 
       t.timestamps null: false
     end
