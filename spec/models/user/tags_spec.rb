@@ -7,9 +7,15 @@ RSpec.describe User, type: :model, user:true do
   end
 
 
-  it 'knows what you did last summer' do
-    expect(true).to eq true
+
+  describe "THE FISHERMAN" do
+
+    it 'knows what you did last summer' do
+      expect(true).to eq true
+    end
+
   end
+
 
 
 end
