@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 RSpec.describe User, type: :model, user:true do
 
@@ -8,7 +8,7 @@ RSpec.describe User, type: :model, user:true do
 
 
   it 'knows what you did last summer' do
-    expect(true).to be_true
+    expect(true).to eq true
   end
 
 
