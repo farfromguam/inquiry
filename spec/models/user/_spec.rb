@@ -3,7 +3,13 @@ require 'rails_helper'
 RSpec.describe User, type: :model, user:true do
 
   before(:each) do
-    # @model = FactoryGirl.create(:model)
+    @user = FactoryGirl.create(:user)
+  end
+
+
+
+  it 'has_many questions' do
+
   end
 
 
