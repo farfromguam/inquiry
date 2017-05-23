@@ -36,6 +36,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
 end
 
 
